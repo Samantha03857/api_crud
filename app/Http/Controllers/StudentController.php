@@ -179,7 +179,7 @@ class StudentController extends Controller
 
         if ($validator->fails()) {
             $data = [
-                'message' => 'Error en la validación de los datos',
+                'message' => 'Error en la validación de los datos entrantes',
                 'errors' => $validator->errors(),
                 'status' => 400
             ];
